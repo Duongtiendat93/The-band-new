@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+/* common */
+.row{
+    margin-left: -8px;
+    margin-right: -8px ;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.column{
+    float: left;
+    padding: 0 8px;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+.bg-black{
+    background-color: black;
+    color: #fff;
+}
+.text-center{
+    text-align: center!important;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+/* Main */
+#header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline;
+}
+#nav >li{
+    display: inline-block;
+    position: relative;
+}
+#nav> li> a{
+    color: #fff;
+    line-height: 46px;   
+}
+#nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 0 24px;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+.subnav li:hover,
+#nav >li:hover >a{
+    background-color: #ccc;
+    color: black;
+}
+#nav ,.subnav {
+    list-style: none;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+
+}
+.subnav li a{
+    color: black;
+    display: inline-block;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .nav-down{
+    font-size: 12px;
+}
+#header .search-box{
+   float: right;
+}
+#header .nav-search{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+}
+#header .search-box:hover{
+    background-color:red ;
+}
+/*  */
+#slider{
+    position: relative;
+    margin-top: 45.6px;
+    padding-top: 50% ;
+    background: url('../assets/img/img_la.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+ }
+ 
+#slider .text-heading{
+    font-weight:500;
+    font-size: 24px;
+    margin-bottom: 25px;
+ }
+ 
+#slide .text-description{
+    font-size: 15px;
+ }
+/*  */
+#container{
+    
+}
+#container .content-selection{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 0;
+}
+
+#container .selection-heading{
+    font-size: 24;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+
+#container .selection-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#container .about-text{
+    font-size: 15px;
+    padding-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+/*  */
+#container .member-list{
+    margin-top: 48px;
+
+}
+#container .member-name{
+   font-size: 15px;
+}
+
+#container .member-img{
+    height: 154px;
+    margin-top: 15px;
+    border-radius:5px ;
+}
+
+/*  */
+
+/* tour */
+#container .book-tiket{
+    background-color: #fff;
+    color: black;
+    list-style: none;
+    margin-top: 35px;
+}
+#container .book-tiket> li{
+    border-bottom: 1px solid #ddd;
+    padding: 4px;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+}
+#container .sold-tiket{
+    background-color: #f44336;
+    color: #fff !important;
+    margin-left: 16px;
+    padding: 0 8px;
+}
+
+#container .number-tiket{
+    float: right;
+    padding: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius:50% ;
+    background-color: black;
+    color: white;
+    padding: 0 8px;
+    margin-top: -2px;
+}
+/* place */
+.place-list{
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-body{
+    background: #fff;
+    color: #000;
+    padding: 16px;
+}
+
+
+
+.place-heading{
+    margin: 15px 0;
+    font-weight: 600;
+
+}
+
+.place-time{
+    margin: 15px 0;
+    opacity: 0.8;
+
+}
+
+.place-discripsion{
+    margin: 15px 0;
+    font-weight: 300;
+    line-height: 1.4;
+
+}
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.place-buy-btn{
+    margin: 15px 0;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+
+}
+/* Contact */
+.Contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+.concact-form{
+    font-size: 15px;
+}
+.concact-form .form-control{
+    padding: 11px;
+    border:1px solid #ccc;
+    width: 100%;
+}
+.Contact-content .concant-form-btn{
+    background-color: black;
+    color:#fff;
+    border: 1px solid #000;
+    padding: 10px 25px;
+    float: right;
+}
+/*  */
+#footer{
+
+}
